@@ -1,0 +1,304 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f4f4f4;
+    color: #333;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: rgb(255, 247, 0);
+    color: rgb(5, 7, 68);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #e8b363;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    color: white;
+    font-size: 24px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Hero */
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #f4d15d, #ebfc50);
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+.hero .btn {
+    margin-top: 20px;
+    padding: 12px 24px;
+    background: #fcb40c;
+    border: none;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.hero .btn:hover {
+    background: #a0650d;
+    transform: scale(1.05);
+}
+
+/* Gallery Section */
+.gallery {
+    text-align: center;
+    padding: 50px;
+    background: linear-gradient(135deg, #FFF700, #FFD900);
+    color: black;
+}
+
+/* Gallery Title */
+.gallery h2 {
+    margin-bottom: 30px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* Gallery Grid */
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+/* Photo Box */
+.photo {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+/* Hover Effect */
+.photo:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Modal Styling */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    max-width: 80%;
+    max-height: 80%;
+    border-radius: 10px;
+}
+
+/* Close Button */
+.close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 35px;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.photo {
+    width: 100%;
+    height: 200px;
+    background: #ccc;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: black;
+    color: white;
+}
+
+/* Services Section */
+.services {
+    text-align: center;
+    padding: 50px;
+    background: #f9f9f9;
+}
+
+.services h2 {
+    margin-bottom: 30px; /* Menambahkan jarak antara judul dan service box */
+    font-size: 28px;
+    color: #333;
+}
+
+.service-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.service-box {
+    background: white;
+    padding: 20px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.service-btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #ff5733;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    border-radius: 5px;
+}
+
+.service-btn:hover {
+    background: #379eed;
+}
+
+/* About Section */
+.about {
+    text-align: center;
+    padding: 50px;
+    background: #222;
+    color: white;
+}
+
+.about p {
+    margin-bottom: 20px; /* Memberikan jarak antara paragraf dan tombol */
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.about .btn {
+    padding: 12px 24px;
+    background: #ff5733;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    border-radius: 5px;
+    margin-top: 15px; /* Memberikan jarak ekstra antara teks dan tombol */
+}
+
+.about .btn:hover {
+    background: #c0392b;
+}
+
+/* Contact Section */
+.contact {
+    text-align: center;
+    padding: 50px;
+    background: #f9f9f9;
+}
+
+#contactForm {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+#contactForm input, #contactForm textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contactForm textarea {
+    height: 100px;
+}
+
+#contactForm .btn {
+    padding: 12px 24px;
+    background: #ff5733;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    border-radius: 5px;
+}
+
+#contactForm .btn:hover {
+    background: #c0392b;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: black;
+    color: white;
+}

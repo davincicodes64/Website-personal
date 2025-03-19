@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Davinci Photoworks</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <script src="{{ url_for('static', filename='js/script.js') }}" defer></script>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">Hi , Good Evening !</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="menu-toggle">☰</button>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Davinci Photoworks</h1>
+            <p>Capturing moments with elegance and style</p>
+            <button id="exploreBtn" class="btn">Explore Gallery</button>
+        </div>
+    </header>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <h2>Gallery</h2>
+        <div class="grid">
+            <div class="photo"></div>
+            <div class="photo"></div>
+            <div class="photo"></div>
+            <div class="photo"></div>
+            <div class="photo"></div>
+            <div class="photo"></div>
+        </div>
+    </section>
+
+  <!-- Services Section -->
+<section id="services" class="services">
+    <h2>My Services</h2>
+    <div class="service-container">
+        <div class="service-box">
+            <h3>Wedding Photography</h3>
+            <p>Capturing the magic of love and celebration through timeless and heartfelt images. From intimate moments to grand ceremonies, every shot tells the beautiful story of a couple’s special day with elegance and emotion.</p>
+            <button class="service-btn">View More</button>
+        </div>
+        <div class="service-box">
+            <h3>Sports Photography</h3>
+            <p>Freezing epic moments in sports, from victory celebrations to dramatic action shots. With the right techniques, each image tells a story of determination, passion, and thrilling competition.</p>
+            <button class="service-btn">View More</button>
+        </div>
+        <div class="service-box">
+            <h3>Racing Photography</h3>
+            <p>Capturing high-speed action on the track with techniques like fast shutter speed, panning, and dynamic composition.</p>
+            <button class="service-btn">View More</button>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="about">
+    <h2>About Me</h2>
+    <p>I am a passionate photographer with years of experience capturing the beauty of life.</p>
+    <button id="learnMoreBtn" class="btn">Learn More</button>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <p>Let's collaborate! Get in touch via email or social media.</p>
+    <form id="contactForm">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <textarea id="message" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+    </form>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2025 Davinci Photoworks. All rights reserved.</p>
+</footer>
